@@ -28,7 +28,7 @@
   grid-template-columns: 1fr 1fr;
   gap: 10px 20px;
   padding: 20px;
-  background: #f5f5f5;
+  background: #bebebe;
   margin-bottom: 20px;
   border-radius: 4px;
   position: relative;
@@ -62,6 +62,8 @@
 }
 
 .empresa-texto {
+  text-align: center;
+  text-align: left;
   font-size: 0.875rem;
   line-height: 1.4;
   color: #525252;
@@ -71,14 +73,17 @@
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  align-content: start;
+  align-content: center;
+  align-self: center;
+  align-items: end;
+  height: 100px;
 }
 
 .empresa-habilidades li {
-  font-size: 0.875rem;
-  line-height: 1.4;
+  font-size: 1.875rem;
+  line-height: 2.4;
   border-radius: 4px;
-  background: #ffffff;
+  justify-content: space-around;
   padding: 5px 10px;
 }
 
