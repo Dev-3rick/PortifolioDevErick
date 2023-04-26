@@ -1,6 +1,6 @@
 .experiencia {
   max-width: 1200px;
-  padding: 40px 20px;
+  padding: 140px 20px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -32,6 +32,24 @@
   margin-bottom: 20px;
   border-radius: 4px;
   position: relative;
+  cursor: pointer;
+}
+.empresa:hover {
+  transform: scale(1.1);
+  animation: wave 1s ease;
+}
+.projetos:hover > :not(:hover) {
+  opacity: 0.8;
+}
+
+.colorHover {
+  color: #fff;
+  transition: color;
+}
+
+.colorHover:hover {
+  color: #67dd0a;
+  animation: wave 1s;
 }
 
 .empresa::before {
@@ -109,5 +127,16 @@
 @media (max-width: 400px) {
   .empresa {
     grid-template-columns: 1fr;
+  }
+}
+@keyframes wave {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: scale(1.1);
   }
 }

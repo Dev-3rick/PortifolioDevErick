@@ -23,7 +23,7 @@
   padding: 10px 20px;
   text-decoration: none;
   display: block;
-  background: #9c9c9c60;
+ 
   color: #2e2d2d;
   border-radius: 4px;
   color: #000000;
@@ -33,16 +33,6 @@
   color: #000000;
 }
 @media (max-width: 800px) {
-  .header {
-    flex-direction: column;
-    gap: 40px;
-    padding: 20px;
-  }
-  .header a {
-    background: #9c9c9c60;
-    color: #2e2d2d;
-    border-radius: 4px;
-  }
   .header h1 {
     color: #000000;
     display: none;
