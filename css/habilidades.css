@@ -105,6 +105,9 @@
   justify-content: space-around;
   padding: 5px 10px;
 }
+a {
+  text-decoration: none;
+}
 
 @media (max-width: 800px) {
   .experiencia {
@@ -123,24 +126,21 @@
     width: initial;
     text-align: left;
   }
-a {
-  text-decoration: none;
-}
 
-@media (max-width: 610px) {
-  .empresa {
-    grid-template-columns: 1fr;
+  @media (max-width: 610px) {
+    .empresa {
+      grid-template-columns: 1fr;
+    }
   }
-}
-@keyframes wave {
-  0% {
-    transform: translateY(0);
+  @keyframes wave {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-15px);
+    }
+    100% {
+      transform: scale(1.1);
+    }
   }
-  50% {
-    transform: translateY(-15px);
-  }
-  100% {
-    transform: scale(1.1);
-  }
-}
 }
